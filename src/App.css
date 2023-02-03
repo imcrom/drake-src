@@ -1,38 +1,113 @@
-.App {
-  text-align: center;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+  
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  html, body {
+    overflow-x: hidden;
   }
-}
+  body {
+    position: relative
+  }
+  .font-link {
+    font-family: 'Roboto', sans-serif;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  .font-link-italic{
+    font-family: 'Fugaz One', sans-serif;
+  }
+
+  .font-link-monst{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.App-Nav-Hero {
+  background-image: url('./images/bg.png'), linear-gradient(90deg, rgba(88,12,147,1) 0%, rgba(19,7,68,1) 73%);
+  height: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
-.App-link {
-  color: #61dafb;
+.Tokenomics {
+  background-image: url('./images/bg-tokenomics.png'), linear-gradient(90deg, rgba(88,12,147,1) 0%, rgba(19,7,68,1) 73%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-size: 100% 100%;
+  background-position: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Roadmap {
+  background-image: url('./images/bg-roadmap.png'), linear-gradient(90deg, rgba(88,12,147,1) 0%, rgba(19,7,68,1) 73%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-size: 100% 100%;
+  background-position: center;
 }
+
+.Volti {
+  background-image: url('./images/bg-volti.png'), linear-gradient(90deg, rgba(88,12,147,1) 0%, rgba(19,7,68,1) 73%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-size: 100% 100%;
+  background-position: center;
+}
+  
+  .Hero{
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  }
+
+
+  .Tax{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12;
+  }
+
+
+  .Roadmap-mob{
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media(max-width: 1052px){
+    .Roadmap-mob{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media(max-width: 1052px) {
+    .Hero{
+      flex-direction: column-reverse;
+      height: 100%;
+    }
+  }
+
+  @media(max-width: 1052px) {
+    .Tax{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+       
+    }
+  }
+
+
+
+  .Appbar {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    position: relative;
+  }
+
